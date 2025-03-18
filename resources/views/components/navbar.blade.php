@@ -9,18 +9,22 @@
           <li class="nav-item">
             <a class="nav-link active" href="{{route('homepage')}}">Home</a>
           </li>
+          @guest
           <li class="nav-item">
             <a class="nav-link" href="{{route('login')}}">accedi</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{route('register')}}">registrati</a>
-          </li>
+          </li>          
+          @endguest
+          @auth
           <li class="nav-item">
             <form action="{{route('logout')}}" method="POST">
             @csrf
             <button type="submit" class="nav-link">logout</button>
           </form>
           </li>
+          @endauth
         </ul>
       </div>
     </div>
