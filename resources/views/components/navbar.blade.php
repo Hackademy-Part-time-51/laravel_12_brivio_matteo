@@ -10,10 +10,10 @@
             <a class="nav-link active" href="{{route('homepage')}}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">accedi</a>
+            <a class="nav-link" href="{{route('login')}}">accedi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">login</a>
+            <a class="nav-link" href="{{route('register')}}">registrati</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">login</a>
