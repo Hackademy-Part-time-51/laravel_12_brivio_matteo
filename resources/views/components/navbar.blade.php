@@ -16,7 +16,10 @@
             <a class="nav-link" href="{{route('register')}}">registrati</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">login</a>
+            <form action="{{route('logout')}}" method="POST">
+            @csrf
+            <button type="submit" class="nav-link">logout</button>
+          </form>
           </li>
         </ul>
       </div>
